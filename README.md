@@ -55,7 +55,7 @@ This project aims to automate various core features of the QA Movies App, includ
 
 <h3>5.  Setup Instructions</h3>
 <p>1. Clone the repository using the following command:</p>
-<p><h1>git clone https://github.com/Prashant-Devops/Account-Page.git</h1></p>
+<p><h3>https://github.com/kiran-gh/Mini_Cucumber_Project.git</h3></p>
 
 <h3>6.  Running Tests</h3>
 <p>1. Open the project in IntelliJ IDEA.</p>

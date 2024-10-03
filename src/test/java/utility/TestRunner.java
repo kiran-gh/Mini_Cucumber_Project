@@ -3,6 +3,8 @@ package utility;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+import static io.cucumber.core.options.Constants.PLUGIN_PROPERTY_NAME;
+
 
 
 
@@ -12,12 +14,14 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions","hooks"},
 //        tags = "@accountsPage",
         plugin = {"pretty",
-                "json:target/MyReports/report.json",
-                "json:target/MyReports/report.xml"},
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json",
+                "junit:target/cucumber-reports/cucumber.xml",
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         publish = true,
         monochrome = true
 )
-public class TestRunner {
+public class TestRunner  {
 
 /*    public static void main(String[] args) {
         for (int i = 0; i < 5; i++) { // Loop to run the tests 5 times
